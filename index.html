@@ -1,0 +1,117 @@
+<!--!
+  @author Mohamed Muntasir
+  @link https://github.com/devmotheg
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Meadowfield Robots Visualizer</title>
+</head>
+
+<body>
+  <!-- Main -->
+  <main>
+    <!-- Tutorial -->
+    <div class="tutorial">
+      <div class="tutorial__page"></div>
+    </div>
+    <!-- Menu -->
+    <div class="menu">
+      <!-- Container -->
+      <div class="menu__background">
+        <div class="container">
+          <div class="menu__nav">
+            <h1>meadowfield robots Visualizer</h1>
+            <button class="menu__compare">compare <i class="fas fa-robot"></i></button>
+            <div class="menu__parcels">
+              <p><i class="fas fa-box"></i> count:
+                <span class="menu__parcels-count"></span>
+              </p>
+              <div class="menu__parcels-buttons">
+                <button class="up">INCREAMENT</button>
+                <button class="down">DECREAMENT</button>
+              </div>
+            </div>
+            <a href="https://github.com/devmotheg" class="my-github" target="_blank"><i class="fab fa-github"></i>
+              Mohamed Muntasir</a>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="menu__selection">
+          <div class="menu__selection-random">
+            <input type="checkbox" name="robot" id="random" data-class="RandomRobot" />
+            <label for="random" data-for="random"><span>random <i class="fas fa-robot"></i></span></label>
+          </div>
+          <div class="menu__selection-mail">
+            <input type="checkbox" name="robot" id="mail" data-class="MailRouteRobot" />
+            <label for="mail" data-for="mail"><span>mail route <i class="fas fa-robot"></i></span></label>
+          </div>
+          <div class="menu__selection-goal">
+            <input type="checkbox" name="robot" id="goal" data-class="GoalOrientedRobot" />
+            <label for="goal" data-for="goal"><span>goal oriented <i class="fas fa-robot"></i></span></label>
+          </div>
+          <div class="menu__selection-efficient">
+            <input type="checkbox" name="robot" id="efficient" data-class="EfficientRobot" />
+            <label for="efficient" data-for="efficient"><span>efficient <i class="fas fa-robot"></i></span></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Village -->
+    <div class="village">
+      <div class="container">
+        <div class="village__ranking">
+          <div class="village__ranking-random">
+            <div><i class="fas fa-box"></i>
+              <span class="random-picked item"></span>/<span class="parcels-count"></span>
+            </div>
+            <div><i class="fas fa-check-double"></i>
+              <span class="random-delivered item"></span>/<span class="parcels-count"></span>
+            </div>
+          </div>
+          <div class="village__ranking-mail">
+            <div><i class="fas fa-box"></i>
+              <span class="mail-picked item"></span>/<span class="parcels-count"></span>
+            </div>
+            <div><i class="fas fa-check-double"></i>
+              <span class="mail-delivered item"></span>/<span class="parcels-count"></span>
+            </div>
+          </div>
+          <div class="village__ranking-goal">
+            <div><i class="fas fa-box"></i>
+              <span class="goal-picked item"></span>/<span class="parcels-count"></span>
+            </div>
+            <div><i class="fas fa-check-double"></i>
+              <span class="goal-delivered item"></span>/<span class="parcels-count"></span>
+            </div>
+          </div>
+          <div class="village__ranking-efficient">
+            <div><i class="fas fa-box"></i>
+              <span class="efficient-picked item"></span>/<span class="parcels-count"></span>
+            </div>
+            <div><i class="fas fa-check-double"></i>
+              <span class="efficient-delivered item"></span>/<span class="parcels-count"></span>
+            </div>
+          </div>
+        </div>
+        <table class="village__map">
+          <tbody></tbody>
+        </table>
+        <div class="village__img">
+          <img src="./media/village.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/app.js" type="module"></script>
+</body>
+
+</html>
