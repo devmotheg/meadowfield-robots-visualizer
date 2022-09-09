@@ -2,7 +2,7 @@
 
 This project is about four robots competing in an annual contest to see who is the fastest one out of all of them!
 
-What inspired me to do this poject is a chapter in Eloquent's JavaScript book, it's pretty much just a neat visualization of it with some features added >:]
+What inspired me to do this poject is a chapter in Eloquent JavaScript book, it's pretty much just a neat visualization of it with some features added >:]
 
 ## Fair use
 
